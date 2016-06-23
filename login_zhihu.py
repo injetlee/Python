@@ -8,8 +8,6 @@ def get_captcha(data):
 
 def login(username,password,oncaptcha):
     sessiona = requests.Session()
-    print(sessiona)
-    print('aaaa')
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'}
     xyz = sessiona.get('https://www.zhihu.com/#signin',headers=headers).content
     _xsrf = BeautifulSoup(sessiona.get('https://www.zhihu.com/#signin',headers=headers).content,'html.parser').find('input',attrs={'name':'_xsrf'}).get('value')
@@ -21,7 +19,6 @@ def login(username,password,oncaptcha):
         "remember_me":True,
         "captcha":oncaptcha(captcha_content)
     }
-    print(data)
     resp = sessiona.post('https://www.zhihu.com/login/email',data,headers=headers).content
     print(resp)
     return resp 
