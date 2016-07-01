@@ -5,7 +5,7 @@ wb = Workbook()
 dest_filename = 'empty_book2.xlsx'
 ws1 = wb.active              #第一个表
 ws1.title = "range names"    #第一个表命名
-#遍历第一个表的1到40行，赋值一个600内的随机数。
+#遍历第一个表的1到40行，赋值一个600内的随机数
 for row in range(1,40):
     ws1.append(range(60))
 ws2 = wb.create_sheet(title="Pi")
