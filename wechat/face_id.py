@@ -132,6 +132,6 @@ def access_api(img):
             draw.rectangle((x, y, x + w, y + h), outline="#4CB050")  # 画出人脸方框
             cv2img = cv2.cvtColor(np.array(pil_img), cv2.COLOR_RGB2BGR)  # 把 pil 格式转换为 cv
             cv2.imwrite('faces/{}'.format(os.path.basename(img)), cv2img)  # 保存图片到 face 文件夹下
-        return '检测成功'
+        return 'success'
     else:
-        return '检测失败'
+        return 'fail'
