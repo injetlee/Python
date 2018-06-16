@@ -29,7 +29,6 @@ class Connect(object):
         xml = req.stream.read()
         msg = parse_message(xml)
         if msg.type == 'text':
-            print('hello')
             reply = TextReply(content=msg.content, message=msg)
             xml = reply.render()
             resp.body = (xml)

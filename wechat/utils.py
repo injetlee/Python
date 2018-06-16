@@ -5,8 +5,8 @@ import time
 import os
 
 token = ''
-app_id = 'wxfc6adcdd7593a712'
-secret = '429d85da0244792be19e0deb29615128'
+app_id = '微信配置界面的AppID'
+secret = '配置界面的开发者密码AppSecret'
 
 
 def img_download(url, name):

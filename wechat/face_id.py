@@ -53,7 +53,6 @@ def get_params(img):
 
 
 def access_api(img):
-    print(img)
     frame = cv2.imread(img)
     nparry_encode = cv2.imencode('.jpg', frame)[1]
     data_encode = np.array(nparry_encode)
