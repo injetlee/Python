@@ -1,3 +1,4 @@
+# -*-coding:utf-8 -*-
 import falcon
 from falcon import uri
 from wechatpy.utils import check_signature
@@ -34,11 +35,11 @@ class Connect(object):
             resp.body = (xml)
             resp.status = falcon.HTTP_200
         elif msg.type == 'image':
-            name = img_download(msg.image, msg.source)  # 下载图片
+            name = img_download(msg.image, msg.source)  
             print(name)
             r = access_api('images/' + name)
-            if r == '检测成功':
-                media_id = img_upload('image', 'faces/' + name)  # 上传图片，得到 media_id
+            if r == 'success':
+                media_id = img_upload('image', 'faces/' + name)
                 reply = ImageReply(media_id=media_id, message=msg)
             else:
                 reply = TextReply(content='人脸检测失败，请上传1M以下人脸清晰的照片', message=msg)
