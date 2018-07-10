@@ -12,3 +12,4 @@ read = requests.get(a)
 f = open('%s.jpg' % local, 'wb')
 f.write(read.content)
 f.close()
+"zhishikanyixia"
