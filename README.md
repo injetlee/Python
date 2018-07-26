@@ -20,3 +20,5 @@
 9.[下载必应首页图片,只下载当天的，一张。](https://github.com/injetlee/Python/blob/master/biyingSpider.py)
 
 10.[Python微信公众号开发](https://github.com/injetlee/Python/tree/master/wechat)
+
+11.[Python爬虫入门(一)——爬取糗百](https://github.com/injetlee/Python/blob/master/qiubai_crawer.py)
