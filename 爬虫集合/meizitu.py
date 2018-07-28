@@ -40,7 +40,7 @@ def get_pic(link, text):
     for i in pic_list:
         pic_link = i.get('src')  # 拿到图片的具体 url
         r = requests.get(pic_link, headers=headers)  # 下载图片，之后保存到文件
-        with open('pic/{}/{}'.format(text, link.split('/')[-1]), 'wb') as f:
+        with open('pic/{}/{}'.format(text, pic_link.split('/')[-1]), 'wb') as f:
             f.write(r.content)
             time.sleep(1)   # 休息一下，不要给网站太大压力，避免被封
 
