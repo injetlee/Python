@@ -74,7 +74,7 @@ def main():
             print(i, 'page', page)
             time.sleep(random.randint(10, 20))
             for row in info:
-                # insert(conn, tuple(row))  # 插入数据库，若不想存入 注释此行
+                insert(conn, tuple(row))  # 插入数据库，若不想存入 注释此行
                 ws1.append(row)
     conn.close()  # 关闭数据库连接，不存数据库 注释此行
     wb.save('{}职位信息.xlsx'.format(lang_name))
