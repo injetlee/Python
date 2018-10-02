@@ -3,8 +3,7 @@ def count_pm(*args):
     alist = list([round(i*2-8,2) for i in args])  #计算三种颗粒浓度
     result = []
     for pm in alist:
-    	pm_abs = abs(pm)
-    	result.append(generate_iso_code(pm_abs))
+    	result.append(generate_iso_code(abs(pm)))
     print (result)
     return result
     	
