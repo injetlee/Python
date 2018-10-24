@@ -1,4 +1,9 @@
-### 这是我日常遇到的一些小问题的解决办法，全部是基于Python3
+
+## 欢迎关注我的微信公众号【智能制造专栏】
+
+## 左手代码，右手制造，分享智能制造相关技术和业务，包括 Python, C#, 数据库，工业大数据、物联网技术及MES/ERP/SAP等系统。
+
+![二维码](qrcode.jpg)
 
 1.[获取当前CPU状态，存储到Influxdb](https://github.com/injetlee/demo/blob/master/CpuToInfluxdb.py)
 
