@@ -24,3 +24,5 @@
 11.[Python爬虫入门(一)——爬取糗百](https://github.com/injetlee/Python/blob/master/qiubai_crawer.py)
 
 12.[Python爬虫入门教程合集](https://github.com/injetlee/Python/tree/master/%E7%88%AC%E8%99%AB%E9%9B%86%E5%90%88)
+
+13.[Python 黑魔法](https://github.com/injetlee/Python/tree/master/Python%20%E9%BB%91%E9%AD%94%E6%B3%95)
