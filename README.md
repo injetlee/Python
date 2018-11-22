@@ -24,6 +24,10 @@
 
 - ### Python 远程关机
 
+## SQL 数据库
+
+- [1 小时 SQL 极速入门（一）](https://mp.weixin.qq.com/s/Lx4B349OlD49ihJPnB6YiA)
+
 ## 其他
 
 - 1.[获取当前CPU状态，存储到Influxdb](https://github.com/injetlee/demo/blob/master/CpuToInfluxdb.py)
