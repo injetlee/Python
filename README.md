@@ -27,6 +27,7 @@
 ## SQL 数据库
 
 - [1 小时 SQL 极速入门（一）](https://mp.weixin.qq.com/s/Lx4B349OlD49ihJPnB6YiA)
+- [1 小时 SQL 极速入门（二）](https://mp.weixin.qq.com/s/D-CEtGYomne5kV_Ji4lodA)
 
 ## 其他
 
