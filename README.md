@@ -19,6 +19,7 @@
 - ### Python 爬虫入门(一)——爬取糗事百科
 - ### Python 爬虫入门(二)——爬取妹子图
 - ### Python 爬虫——Python 岗位分析报告
+- ### Python 爬虫利器——Selenium介绍
 - ### Python 爬虫—— 抖音 App 视频抓包爬取
 
 ## [Python 黑魔法](https://github.com/injetlee/Python/tree/master/Python%20%E9%BB%91%E9%AD%94%E6%B3%95)
