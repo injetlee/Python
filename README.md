@@ -32,6 +32,7 @@
 - [1 小时 SQL 极速入门（二）](https://mp.weixin.qq.com/s/D-CEtGYomne5kV_Ji4lodA)
 - [1 小时 SQL 极速入门（三）](https://mp.weixin.qq.com/s/7aJqrhCNcvnt2gO3p5P50Q)
 - [SQL 高级查询——（层次化查询，递归）](https://mp.weixin.qq.com/s/R9Yldd-5AK4ObRA9Lfbz-Q)
+- [GROUP BY高级查询,ROLLUP，CUBE，GROUPPING详解](https://mp.weixin.qq.com/s/_OK6dtHGhp7ukC2pe1ginQ)
 
 ## 其他
 
