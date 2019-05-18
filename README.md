@@ -12,14 +12,19 @@
 ## [Python微信公众号开发](https://github.com/injetlee/Python/tree/master/wechat)
 
 - ### Python 微信公众号开发—小白篇(一)
+
 - ### Python 公众号开发—颜值检测
 
 ## [Python 爬虫入门合集](https://github.com/injetlee/Python/tree/master/%E7%88%AC%E8%99%AB%E9%9B%86%E5%90%88)
 
 - ### Python 爬虫入门(一)——爬取糗事百科
+
 - ### Python 爬虫入门(二)——爬取妹子图
+
 - ### Python 爬虫——Python 岗位分析报告
+
 - ### Python 爬虫利器——Selenium介绍
+
 - ### Python 爬虫—— 抖音 App 视频抓包爬取
 
 ## [Python 黑魔法](https://github.com/injetlee/Python/tree/master/Python%20%E9%BB%91%E9%AD%94%E6%B3%95)
@@ -33,6 +38,7 @@
 - [1 小时 SQL 极速入门（三）](https://mp.weixin.qq.com/s/7aJqrhCNcvnt2gO3p5P50Q)
 - [SQL 高级查询——（层次化查询，递归）](https://mp.weixin.qq.com/s/R9Yldd-5AK4ObRA9Lfbz-Q)
 - [GROUP BY高级查询,ROLLUP，CUBE，GROUPPING详解](https://mp.weixin.qq.com/s/_OK6dtHGhp7ukC2pe1ginQ)
+- [SQL 行转列，列转行](https://mp.weixin.qq.com/s/xOFIg42FQhNpyg94ajhtqQ)
 
 ## 其他
 
