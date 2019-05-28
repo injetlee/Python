@@ -36,11 +36,11 @@ def get_pic(link, text):
     soup = BeautifulSoup(html, 'html.parser')
     pic_list = soup.find('div', id="picture").find_all('img')  # 找到界面所有图片
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"}
-    create_dir('pic/{}'.format(text))
+    #create_dir('pic/{}'.format(text))
     for i in pic_list:
         pic_link = i.get('src')  # 拿到图片的具体 url
         r = requests.get(pic_link, headers=headers)  # 下载图片，之后保存到文件
-        with open('pic/{}/{}'.format(text, pic_link.split('/')[-1]), 'wb') as f:
+        with open('pic/{}'.format(text+pic_link.split('/')[-1]), 'wb') as f:
             f.write(r.content)
             time.sleep(1)   # 休息一下，不要给网站太大压力，避免被封
 
