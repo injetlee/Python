@@ -3,13 +3,17 @@ import os
 import time
 import threading
 from bs4 import BeautifulSoup
+from modules import useragent
 
 
 def download_page(url):
     '''
     用于下载页面
     '''
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"}
+    headers = {
+        'User-Agent': useragent.getUserAgent()
+    }
+    # headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"}
     r = requests.get(url, headers=headers)
     r.encoding = 'gb2312'
     return r.text
@@ -25,6 +29,7 @@ def get_pic_list(html):
         a_tag = i.find('h3', class_='tit').find('a')
         link = a_tag.get('href')
         text = a_tag.get_text()
+        print(text,link)
         get_pic(link, text)
 
 
@@ -35,11 +40,15 @@ def get_pic(link, text):
     html = download_page(link)  # 下载界面
     soup = BeautifulSoup(html, 'html.parser')
     pic_list = soup.find('div', id="picture").find_all('img')  # 找到界面所有图片
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"}
+    print(pic_list)
+    # headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"}
+    headers = {
+        'User-Agent': useragent.getUserAgent()
+    }
     create_dir('pic/{}'.format(text))
     for i in pic_list:
         pic_link = i.get('src')  # 拿到图片的具体 url
-        r = requests.get(pic_link, headers=headers)  # 下载图片，之后保存到文件
+        r = requests.get(pic_link, headers=headers,timeout=3)  # 下载图片，之后保存到文件
         with open('pic/{}/{}'.format(text, pic_link.split('/')[-1]), 'wb') as f:
             f.write(r.content)
             time.sleep(1)   # 休息一下，不要给网站太大压力，避免被封
@@ -63,9 +72,11 @@ def main():
         for thread in threads:
             if not thread.is_alive():
                 threads.remove(thread)
-        while len(threads) < 5 and len(queue) > 0:   # 最大线程数设置为 5
+        while len(threads) <5  and len(queue) > 0:   # 最大线程数设置为 5
             cur_page = queue.pop(0)
-            url = 'http://meizitu.com/a/more_{}.html'.format(cur_page)
+            print(cur_page)
+            url = 'https://www.meizitu.com/a/list_1_{}.html'.format(cur_page)
+            print(url)
             thread = threading.Thread(target=execute, args=(url,))
             thread.setDaemon(True)
             thread.start()
