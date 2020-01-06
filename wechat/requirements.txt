@@ -12,6 +12,6 @@ python-mimeparse==1.6.0
 requests==2.18.4
 six==1.11.0
 urllib3==1.22
-waitress==1.1.0
+waitress==1.4.2
 wechatpy==1.7.0
 xmltodict==0.11.0
