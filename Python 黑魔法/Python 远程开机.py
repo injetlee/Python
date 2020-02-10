@@ -1,3 +1,9 @@
+import socket
+import struct
+import time
+from http.client import HTTPResponse
+
+
 def wake_up(request, mac='DC-4A-3E-78-3E-0A'):
     MAC = mac
     BROADCAST = "192.168.0.255"
@@ -21,8 +27,8 @@ def wake_up(request, mac='DC-4A-3E-78-3E-0A'):
         sock.sendto(send_data, (BROADCAST, 7))
         time.sleep(1)
         sock.sendto(send_data, (BROADCAST, 7))
-        return HttpResponse()
+        return HTTPResponse()
         print("Done")
     except Exception as e:
-        return HttpResponse()
+        return HTTPResponse()
         print(e)
