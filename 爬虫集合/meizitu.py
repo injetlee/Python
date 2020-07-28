@@ -13,9 +13,7 @@ def download_page(url):
     return r.text
 
 def get_pic_list(html):
-    '''
-    获取每个页面的套图列表,之后循环调用get_pic函数获取图片
-    '''
+    #获取每个页面的套图列表,之后循环调用get_pic函数获取图片
     soup = BeautifulSoup(html, 'html.parser')
     pic_list = soup.find_all('li', class_='wp-item')
     for i in pic_list:
@@ -24,11 +22,8 @@ def get_pic_list(html):
         text = a_tag.get_text()
         get_pic(link, text)
 
-
 def get_pic(link, text):
-    '''
-    获取当前页面的图片,并保存
-    '''
+    #获取当前页面的图片,并保存
     html = download_page(link)  # 下载界面
     soup = BeautifulSoup(html, 'html.parser')
     pic_list = soup.find('div', id="picture").find_all('img')  # 找到界面所有图片
