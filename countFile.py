@@ -1,3 +1,4 @@
+#Amezing method
 import os
 result = []
 def get_all(cwd):
