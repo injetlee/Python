@@ -1,4 +1,4 @@
-import os
+import os # This Files Imports OS
 result = []
 def get_all(cwd):
     get_dir = os.listdir(cwd)  #遍历当前目录，获取文件列表
