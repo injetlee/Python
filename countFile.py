@@ -10,6 +10,7 @@ def get_all(cwd):
             ax = os.path.basename(sub_dir)  #如果当前路径不是文件夹，则把文件名放入列表
             result.append(ax)
             print(len(result))   #对列表计数
+            print(len(result))
             
 if __name__ == "__main__": 
     cur_path = os.getcwd()   #当前目录
