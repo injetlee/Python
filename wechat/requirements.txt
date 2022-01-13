@@ -5,7 +5,7 @@ idna==2.6
 numpy==1.14.5
 opencv-python==3.4.1.15
 optionaldict==0.1.1
-Pillow==5.1.0
+Pillow==9.0.0
 pycrypto==2.6.1
 python-dateutil==2.7.3
 python-mimeparse==1.6.0
