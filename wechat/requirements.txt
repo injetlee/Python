@@ -2,7 +2,7 @@ certifi==2018.4.16
 chardet==3.0.4
 falcon==1.4.1
 idna==2.6
-numpy==1.14.5
+numpy==1.22.0
 opencv-python==3.4.1.15
 optionaldict==0.1.1
 Pillow==5.1.0
