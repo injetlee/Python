@@ -1,5 +1,5 @@
 from openpyxl import Workbook
-from openpyxl.compat import range
+# from openpyxl.compat import range
 from openpyxl.cell import get_column_letter
 wb = Workbook()
 dest_filename = 'empty_book2.xlsx'
