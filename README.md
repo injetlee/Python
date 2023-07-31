@@ -53,9 +53,10 @@
 - 5.[Excel文件读入数据库](https://github.com/injetlee/demo/blob/master/excelToDatabase.py)
 
 - 6.[爬取拉勾网职位信息](https://github.com/injetlee/demo/blob/master/lagouSpider.py)
-
+- python 
 - 7.[批量修改文件名](https://github.com/injetlee/demo/blob/master/ModifyFilename.py)
 
 - 8.[读写excel](https://github.com/injetlee/demo/blob/master/readExcel.py)
 
 - 9.[下载必应首页图片,只下载当天的，一张。](https://github.com/injetlee/Python/blob/master/biyingSpider.py)
+- انا عربي 
