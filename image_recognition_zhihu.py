@@ -132,7 +132,7 @@ def bolting(k_low,k_hi,k3_confidence):
             "input_text":input_text   
             }
 
-        # 提交过快会被拒绝，{"code":120005,"name":"ERR_VERIFY_CAPTCHA_TOO_QUICK"} ，假装思考5秒钟
+        # 提交过快会被拒绝，{"code":120005,"name":"ERR_VERIFY_CAPTCHA_TOO_QUICK"} ，防止ip短时间大量访问同一链接
         time.sleep( 4 + random.randint(1,9)/10 )
         try:    
             resp5 = sessiona.post('https://www.zhihu.com/api/v3/oauth/captcha?lang=cn',data,headers=headers)
