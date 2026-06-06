@@ -9,12 +9,12 @@ config = {
 	#'cursorclass': pymysql.cursors.DictCursor
 
 }
-conn = pymysql.connect(**config)
-conn.autocommit(1)
-cursor = conn.cursor()
+connect = pymysql.connect(**config)
+connect.autocommit(1)
+cursor = connect.cursor()
 name = 'lyexcel'
 cursor.execute('create database if not exists %s' %name)
-conn.select_db(name)
+connect.select_db(name)
 table_name = 'info'
 cursor.execute('create table if not exists %s(id MEDIUMINT NOT NULL AUTO_INCREMENT,name varchar(30),tel varchar(30),primary key (id))'%table_name)
 
@@ -27,6 +27,4 @@ for row in wb2:
 		cursor.execute('insert into info (name,tel) values(%s,%s)',value1)
 
 print("overing...")
-# for row in A:
-# 	print(row)
-#print (wb2.get_sheet_names())
+
