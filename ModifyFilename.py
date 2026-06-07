@@ -1,5 +1,7 @@
 import os
+#const dir
 dir = os.getcwd()
+#const subdir
 subdir = os.listdir(dir)
 for i in subdir:
     path = os.path.join(dir, i)
